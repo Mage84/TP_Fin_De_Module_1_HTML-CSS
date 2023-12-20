@@ -9,41 +9,30 @@
 	</head>
 	<body>
 		<header>
-			<div id="logo"></div>
+			<div id="logo"><img src=".\logo\logo_adrar.png" alt="" /></div>
 			<nav>
 				<ul>
-					<li>Accueil</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>API</li>
-					<li>Contact</li>
+					<li><a href="accueil.html">Accueil</a></li>
+					<li><a href="url">HTML</a></li>
+					<li><a href="page_css.html">CSS</a></li>
+					<li><a href="page_js.html">JavaScript</a></li>
+					<li><a href="page_api.html">API</a></li>
+					<li><a href="page_contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<div id="mainBody">
-			<h1>Nous contacter :</h1>
-			<form action="formulaireContact.php" method="post">
-				<div id="nom">
-					<label for="contactName">Your label here</label>
-					<input type="text" name="nom" id="contactName" placeholder="Nom *" />
-				</div>
-				<div id="prénom">
-					<label for="contactFirstName">Your label here</label>
-					<input type="text" name="prénom" id="contactFirstName" placeholder="Prénom *" />
-				</div>
-				<div id="E-mail">
-					<label for="contactE-mail">Your label here</label>
-					<input type="email" name="E-mail" id="contactE-mail" placeholder="E-Mail *" />
-				</div>
-				<div id="Telephone">
-					<label for="contactPhone">Your label here</label>
-					<input type="tel" name="Telephone" id="contactPhone" placeholder="Tél *" />
-				</div>
-				<div id="message">
-					<label for="contactMessage">Your label here</label>
-					<input type="text" name="message" id="contactMessage" placeholder="Message *" />
-				</div>
+			<h2>Nous contacter :</h2>
+			<form action="" method="post">
+				<img src="./Logos/Logo_Signature.png" alt="" class="labelIcon" />
+				<input type="text" name="nom" id="contactName" placeholder="Nom *" />
+				<img src="./Logos/Logo_Signature.png" alt="" class="labelIcon" />
+				<input type="text" name="prénom" id="contactFirstName" placeholder="Prénom *" />
+				<img src="./Logos/Mail_Logo.png" alt="" class="labelIcon" />
+				<input type="email" name="E-mail" id="contactE-mail" placeholder="E-Mail *" />
+				<img src="./Logos/Tel_Logo.png" alt="" class="labelIcon" />
+				<input type="tel" name="Telephone" id="contactPhone" placeholder="Tél *" />
+				<input type="text" name="message" id="contactMessage" placeholder="Message *" />
 				<input type="submit" id="submit" />
 			</form>
 		</div>
