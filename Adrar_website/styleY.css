@@ -1,53 +1,76 @@
 
 #container{
     border:2px red solid;
-    background-color: grey;
-    width: 60%;
+     background-color: #E7E7E7 ; 
+    width: 80%;
     height: auto;
     display: grid ;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 2em;
+    grid-template-columns: 70% 30%;
     
 }
-h2{
-    margin-top: 150px;
-}
+
 
 #box1{
-    background-color: rgb(129, 99, 157);
+   /* background-color: rgb(129, 99, 157);*/
     height: auto;
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 250px;
+    width: 450px;
+    grid-column: 1;
     
 
 }
 
 #box2{
-    display: flex;
-    background-color: rgb(129, 140, 113);
+    
+  /*  background-color: rgb(129, 140, 113);*/
     height:auto;
+    grid-column: 1;
+    width: auto;
+}
+
+.imgarticle{
+    grid-column: 2;
+    align-self: center;
+    height: 230px;
+    width: auto;
+    margin-left: 20px;
+   
+    
+
+    
 }
 
 #box3{
-    background-color: rgb(159, 205, 205);
-    height: 200px;
+   /* background-color: rgb(159, 205, 205);*/
+    height: auto;
+    grid-column: 1;
 }
 
 #box4{ 
-    background-color: rgb(173, 143, 122);
+   /* background-color: rgb(173, 143, 122);*/
     height: auto;
+    grid-column: 1;
 }
 
-img{
+/*#img{
     margin-left: 20px;
     margin-right: 20px;
-}
+} 
+*/
 
 
 #img2{
-    display: block;
-    margin: auto;
+    display: block;  
     width: 50%;
+    margin: auto;
 }
+
+#img3{display: block;
+width: 50%;
+height: 250px;
+margin-left: 40px;}
+
