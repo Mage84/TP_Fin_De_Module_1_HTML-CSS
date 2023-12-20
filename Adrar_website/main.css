@@ -59,6 +59,22 @@ footer {
   background-color: #797979;
 }
 
+/* img linkedin footer */
+
+#linkedinimg {
+  height: 75px;
+}
+
 footer > p {
   grid-column-start: 2;
+  align-self: self-end;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.flexitems {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
