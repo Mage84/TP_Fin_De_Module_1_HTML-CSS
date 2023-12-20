@@ -1,0 +1,22 @@
+#boxApropos {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #797979;
+  margin: 10px;
+}
+
+#flexboxtitres {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#flexboxtitres h1 {
+  color: #8ec14f;
+}
+#QuiSommesNous {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
