@@ -1,0 +1,53 @@
+
+#container{
+    border:2px red solid;
+    background-color: grey;
+    width: 60%;
+    height: auto;
+    display: grid ;
+    margin: auto;
+    font-size: 1.5em;
+    
+}
+h2{
+    margin-top: 150px;
+}
+
+#box1{
+    background-color: rgb(129, 99, 157);
+    height: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    
+
+}
+
+#box2{
+    display: flex;
+    background-color: rgb(129, 140, 113);
+    height:auto;
+}
+
+#box3{
+    background-color: rgb(159, 205, 205);
+    height: 200px;
+}
+
+#box4{ 
+    background-color: rgb(173, 143, 122);
+    height: auto;
+}
+
+img{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#img2{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
