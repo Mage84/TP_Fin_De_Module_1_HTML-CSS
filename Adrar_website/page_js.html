@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JavaScript</title>
 		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="page_js.css" />
 	</head>
 	<body>
 		<header>
@@ -20,6 +21,144 @@
 				</ul>
 			</nav>
 		</header>
+		<div id="mainBody">
+			<h1>Le JavaScript</h1>
+			<img src="./JS_imgs/Unofficial_JavaScript_logo_2.svg" alt="" height="200" width="200" />
+			<article class="artJS" id="artJS1">
+				<h2>Le JS c'est quoi ?</h2>
+				<p>
+					JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce
+					titre est une partie essentielle des applications web. Avec les langages HTML et CSS, JavaScript est au cœur des
+					langages utilisés par les développeurs web. Une grande majorité des sites web l'utilisent, et la majorité des
+					navigateurs web disposent d'un moteur JavaScript pour l'interpréter.
+					<br />
+					<br />
+					JavaScript est aussi employé pour les serveurs Web avec l'utilisation (par exemple) de Node.js ou de Deno.
+					<br />
+					<br />
+					JavaScript a été créé en 1995 par Brendan Eich et intégré au navigateur web Netscape Navigator 2.0. L'implémentation
+					concurrente de JavaScript par Microsoft dans Internet Explorer jusqu'à sa version 9 se nommait JScript, tandis que celle
+					d'Adobe Systems se nommait ActionScript. JavaScript a été standardisé sous le nom d'ECMAScript en juin 1997 par Ecma
+					International dans le standard ECMA-262. La version en vigueur de ce standard depuis juin 2022 est la 13e édition.
+					<br />
+					<br />
+					C'est un langage orienté objet à prototype : les bases du langage et ses principales interfaces sont fournies par des
+					objets. Cependant, à la différence d'un langage orienté objets à classes, les objets de base ne sont pas des instances
+					de classes. En outre, les fonctions sont des objets de première classe. Le langage supporte le paradigme objet,
+					impératif et fonctionnel.
+					<br />
+					<br />
+					JavaScript est le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environ
+					500 000 paquets en août 2017
+				</p>
+				<img src="./JS_imgs/JavaScript_screenshot.png" alt="" height="200" width="200" />
+			</article>
+			<article class="artJS" id="artJS2">
+				<h2>Son histoire :</h2>
+				<p>
+					Le langage a été créé en dix jours en mai 1995 pour le compte de la Netscape Communications Corporation par Brendan
+					Eich, qui s'est inspiré de nombreux langages, notamment de Java mais en simplifiant la syntaxe pour les débutants.
+					Brendan Eich a initialement développé un langage de script côté serveur, appelé LiveScript, pour renforcer l'offre
+					commerciale de serveur HTTP. Netscape travaille alors au développement d'une version orientée client de LiveScript.
+					<br />
+					<br />
+					Quelques jours avant sa sortie, Netscape change le nom de LiveScript pour JavaScript. Sun Microsystems et Netscape
+					étaient partenaires, et la machine virtuelle Java de plus en plus populaire. Ce changement de nom servait les intérêts
+					des deux sociétés. Le 4 décembre 1995 Netscape et Sun Microsystems annoncent la sortie de JavaScript, décrit comme un
+					complément à Java, dans un communiqué de presse commun. Cette initiative a contribué à créer auprès du public une
+					certaine confusion entre les deux langages, proches syntaxiquement mais pas du tout dans leurs concepts fondamentaux, et
+					qui perdure encore de nos jours.
+					<br />
+					<br />
+					En mars 1996, Netscape met en œuvre le moteur JavaScript dans son navigateur web Netscape Navigator 2.0. Le succès de ce
+					navigateur contribue à l'adoption rapide de JavaScript dans le développement web orienté client. Microsoft réagit alors
+					en développant JScript, qu'il inclut ensuite dans Internet Explorer 3.0 en août 1996 pour la sortie de son navigateur.
+					<br />
+					<br />
+					« JavaScript » devient une marque déposée par Sun Microsystems aux États-Unis en mai 1997 et evolue sur 8 versions
+					jusqu'à ce jour.
+				</p>
+			</article>
+			<article class="artJS" id="artJS3">
+				<h2>D'un point de vue securité :</h2>
+				<p>
+					JavaScript et la structure DOM des pages HTML/XML ont quelques failles de sécurité. En effet, des scripts malveillants
+					peuvent se cacher dans le code d'une page web et s'exécuter sur l'ordinateur cible de l'utilisateur du Web.
+					<br />
+					<br />
+					Les fournisseurs de navigateurs web tentent de réduire ce risque avec deux restrictions :
+					<br />
+				</p>
+				<ul>
+					<li>
+						L'une est de faire exécuter ces scripts dans un espace à part des autres données (sandbox) dans lequel seules des
+						actions relatives au web (mouvements de souris, affichage de pixel, communications) peuvent être exécutées, sans
+						avoir accès au système de fichier principal.
+					</li>
+					<li>
+						La deuxième est de n'exécuter les scripts que selon les contraintes de same-origin policy : dans cet esprit, un site
+						Web ne doit pas avoir accès aux informations telles que les noms d'utilisateur et mot de passe ou cookies reçus des
+						autres sites visités. Les vulnérabilités de JavaScript sont bien souvent des brèches d'au moins l'un de ces deux
+						principes.
+					</li>
+				</ul>
+				<br />
+				<p>
+					Certains sous-ensembles du langage Javascript tels que JavaScript—ADsafe ou Secure ECMAScript (SES) fournissent de plus
+					grands niveaux de sécurité, en particulier pour les scripts créés par des tierces parties (notamment les
+					publicités)17,18. Caja est un autre logiciel pour inclure et isoler de manière sécurisée du JavaScript et du HTML tierce
+					partie.
+					<br />
+					<br />
+					La Politique de sécurité du contenu est la principale méthode destinée à assurer que seul un script de confiance est
+					exécuté sur une page Web. Meltdown est une vulnérabilité indépendante de Javascript, qui peut notamment être exploitée
+					en Javascript.
+				</p>
+			</article>
+			<article class="artJS" id="artJS4">
+				<h2>D'un point de vue programmation :</h2>
+				<p>
+					Le propos de JavaScript est de manipuler de façon simple des objets, au sens informatique, fournis par une application
+					hôte. Par exemple dans un navigateur web, un script écrit en javascript peut être utilisé pour apporter une touche
+					interactive ou dynamique à un applicatif (page ou site web), qui sans cela serait une page statique figée. Le langage
+					Javascript permet par exemple d'écrire des scripts pour afficher ou cacher un paragraphe, une image ou un popup, selon
+					les interactions de l'utilisateur, ou d'informer le serveur du temps passé à lire une page.
+					<br />
+					<br />
+				</p>
+				<h3>Exemle</h3>
+				<p>
+					Il est possible dans un script en langage Javascript, d'afficher le texte hello world sur la console de debug de
+					l’application. Ceci peut être utilisé par des développeurs en phase de mise au point19. :
+					<br />
+					<br />
+				</p>
+				<h1>à mettre en exemple</h1>
+				<p>
+					window.console.log('Hello world'); window.console.exp(hello world)
+					<br />
+					// ou
+					<br />
+					global.console.log('Hello world'); window.console.log(hello world)
+					<br />
+					<br />
+					Dans une application hôte d'un navigateur, console est une des méthodes de l'objet global window20. Dans d'autres
+					applications hôtes comme Node.js, l'objet global est global21. Les méthodes de l'objet global étant accessibles sans
+					préfixe, window et global sont facultatifs.
+					<br />
+					<br />
+					La syntaxe
+				</p>
+				<h1>à mettre en exemple</h1>
+				<p>
+					console.log('Hello world');
+					<br />
+					<br />
+					aura donc exactement le même résultat en plus d'être compatible sur tous les environnements.
+				</p>
+			</article>
+			<article></article>
+		</div>
 		<footer>
 			<div>
 				<h2>A PROPOS</h2>
