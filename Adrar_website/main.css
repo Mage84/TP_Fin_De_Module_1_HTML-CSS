@@ -1,0 +1,21 @@
+header {
+	display: grid;
+	grid-template: 2fr 5fr;
+}
+
+nav > ul {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	list-style-type: none;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 4fr 1fr;
+	text-align: center;
+}
+
+footer > p {
+	grid-column-start: 2;
+}
