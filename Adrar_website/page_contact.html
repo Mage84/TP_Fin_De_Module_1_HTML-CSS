@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="page_contact.css" />
 	</head>
 	<body>
 		<header>
@@ -19,6 +21,32 @@
 				</ul>
 			</nav>
 		</header>
+		<div id="mainBody">
+			<h1>Nous contacter :</h1>
+			<form action="formulaireContact.php" method="post">
+				<div id="nom">
+					<label for="contactName">Your label here</label>
+					<input type="text" name="nom" id="contactName" placeholder="Nom *" />
+				</div>
+				<div id="prénom">
+					<label for="contactFirstName">Your label here</label>
+					<input type="text" name="prénom" id="contactFirstName" placeholder="Prénom *" />
+				</div>
+				<div id="E-mail">
+					<label for="contactE-mail">Your label here</label>
+					<input type="email" name="E-mail" id="contactE-mail" placeholder="E-Mail *" />
+				</div>
+				<div id="Telephone">
+					<label for="contactPhone">Your label here</label>
+					<input type="tel" name="Telephone" id="contactPhone" placeholder="Tél *" />
+				</div>
+				<div id="message">
+					<label for="contactMessage">Your label here</label>
+					<input type="text" name="message" id="contactMessage" placeholder="Message *" />
+				</div>
+				<input type="submit" id="submit" />
+			</form>
+		</div>
 		<footer>
 			<div>
 				<h2>A PROPOS</h2>

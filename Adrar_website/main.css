@@ -1,24 +1,21 @@
-#container{
-    border:2px red solid;
-    background-color: grey;
-    width: 1000px;
-    height: 1000px;
-    display: grid;
+header {
+	display: grid;
+	grid-template: 2fr 5fr;
 }
 
-
-#box1{
-    background-color: blueviolet;
+nav > ul {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	list-style-type: none;
 }
 
-#box2{
-    background-color: greenyellow;
+footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 4fr 1fr;
+	text-align: center;
 }
 
-#box3{
-    background-color: aqua;
-}
-
-#box4{ 
-    background-color: chocolate;
+footer > p {
+	grid-column-start: 2;
 }
