@@ -48,15 +48,27 @@
     padding: 20px;
     height: auto;
     grid-column: 1;
+    width: auto;
 }
 
 #box4{ 
     padding: 20px;
     height: auto;
     grid-column: 1;
+    width: auto;
 }
 
 
+#box5{
+    padding: 20px;
+    height: auto;
+    grid-column: 1;
+    width:auto;
+}
+
+#box5 p{
+    padding-right: 100px;
+}
 
 
 #img2{
@@ -68,9 +80,17 @@
 
 #img3{
     display: block;
-    width: 50%;
-    height: 250px;
-    margin-left: 40px;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#imagebox4right{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    
 }
 
 
