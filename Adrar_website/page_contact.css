@@ -1,34 +1,54 @@
 #mainBody {
 	display: grid;
 	grid-template-rows: 1fr 4fr;
-}
-
-#mainBody > h1 {
-	text-align: center;
+	grid-template-columns: 30px repeat(12, 1fr);
 }
 
 #mainBody > form {
+	grid-row: 2;
+	grid-column: 1 / 13;
 	display: grid;
-	grid-template-rows: repeat(4, 1fr) 3fr 1fr;
-	grid-template-columns: 1fr 7fr 3fr 1fr;
+	grid-template-rows: repeat(10, 1fr);
+	grid-template-columns: 30px repeat(12, 1fr);
+	background-color: #797979;
+	padding: 0.3em;
 }
 
-#mainBody > form > div {
-	grid-column: 1 / 5;
-	display: grid;
-	grid-template-columns: 1fr 10fr 1fr;
+#mainBody > h1 {
+	grid-row: 1;
+	grid-column: 2 / 5;
+	justify-self: center;
 }
 
 input {
-	width: 40%;
+	grid-column: 2 / 5;
+	border: solid 1px #797979;
+	border-radius: 0.5em;
+	background-color: #e7e7e7;
+}
+
+.labelIcon {
+	height: 30px;
+	width: 30px;
+	grid-column: 1;
+	align-self: center;
+	justify-self: center;
+	background-color: #e7e7e7;
+	border-radius: 25%;
 }
 
 #contactMessage {
-	width: 70%;
-	height: 100%;
+	grid-row: 5/10;
+	grid-column: 2 / 7;
 }
 
 #submit {
 	width: max-content;
-	grid-column: 2;
+	grid-row: 10;
+	grid-column: 6;
+	justify-self: end;
+}
+
+#submit:hover {
+	background-color: lightgray;
 }
