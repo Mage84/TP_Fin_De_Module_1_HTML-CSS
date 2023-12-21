@@ -9,7 +9,6 @@ body {
 h2,
 h3,
 h1 {
-	font-weight: bold;
 	color: white;
 }
 
@@ -41,21 +40,29 @@ header img {
 	padding: 10px;
 }
 
+nav {
+	width: 100%;
+}
 nav > ul {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	list-style-type: none;
-	justify-items: center;
-	gap: 40px;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
 	padding: 10px;
+	list-style: none;
+
+	/* display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style-type: none;
+  justify-items: center;
+  gap: 40px; */
 }
 
 footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 4fr 1fr;
 	text-align: center;
 	background-color: #797979;
+	padding: 15px;
 }
 
 /* img linkedin footer */
@@ -85,7 +92,38 @@ footer > p {
 	color: white;
 }
 
-#container h2,
-li {
-	color: #8ec14f;
+@media only screen and (max-width: 900px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	#logo img {
+		height: 80px;
+	}
+	li {
+		font-size: medium;
+	}
+	nav {
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+	footer h2 {
+		font-size: 1em;
+	}
+	.flexitems p {
+		font-size: smaller;
+		margin: 15px;
+	}
+	footer #linkedinimg {
+		height: 50px;
+	}
+	footer p {
+		text-align: center;
+	}
 }
