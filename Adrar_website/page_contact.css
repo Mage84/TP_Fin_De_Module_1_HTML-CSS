@@ -63,7 +63,7 @@ textarea {
 	}
 	#submit {
 		grid-row: 10;
-		grid-column: 6;
+		grid-column: 9;
 	}
 	input {
 		grid-column: 2 / 7;
