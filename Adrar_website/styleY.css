@@ -1,7 +1,5 @@
 
 #container{
-   /* border:2px red solid;*/
-    /* background-color: #E7E7E7 ; */
     width: 80%;
     height: auto;  
     margin: auto;
@@ -41,7 +39,7 @@
     align-self: center;
     height: 230px;
     width: auto;
-    margin-left: 20px; 
+    margin: 20px; 
 }
 
 #box3{
@@ -156,4 +154,18 @@
     height: 300px;
     margin: auto;
     padding-bottom: 20px;
+}
+
+
+
+/* éléments pour css page_api.html */
+
+
+#imgapi1 {
+    grid-column: 2;
+    align-self: center;
+    height: 230px;
+    width:  250px;
+    margin: 20px; 
+
 }
