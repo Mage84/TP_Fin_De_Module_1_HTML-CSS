@@ -39,11 +39,6 @@ input {
 	margin: 0.3em;
 }
 
-#contactMessage {
-	grid-row: 5/10;
-	grid-column: 2 / 7;
-}
-
 #submit {
 	width: max-content;
 	grid-row: 10;
@@ -53,4 +48,13 @@ input {
 
 #submit:hover {
 	background-color: lightgray;
+}
+
+textarea {
+	grid-column: 2 / 7;
+	grid-row: 5 / 10;
+	margin: 0.3em;
+	border: solid 1px #797979;
+	border-radius: 0.5em;
+	background-color: #e7e7e7;
 }
