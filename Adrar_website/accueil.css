@@ -1,22 +1,60 @@
-#boxApropos {
+.boxApropos {
   width: 500px;
   display: flex;
   justify-content: center;
   background-color: #797979;
   margin: 10px;
+  border-radius: 10px;
+}
+.boxApropos h1 {
+  color: #8ec14f;
 }
 
-#flexboxtitres {
+.flexboxtitres {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
 }
+
 #flexboxtitres h1 {
   color: #8ec14f;
 }
+
 #QuiSommesNous {
   display: flex;
   align-items: center;
-  margin: 10px;
+  gap: 10px;
+  padding: 30px;
+}
+
+#containerFormations {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+}
+
+.formation1,
+.formation2,
+.formation3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img1,
+.img2,
+.img3 {
+  height: 200px;
+  gap: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+#iFrame {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
