@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CSS</title>
-		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="styleY.css">
+		<title>HTML</title>
 	</head>
 	<body>
 		<header>
@@ -20,6 +21,213 @@
 				</ul>
 			</nav>
 		</header>
+
+		<div id="container">
+
+			
+			<div id="box1">
+				<h2>Table des matières</h2>
+				<ul id="listarticle1">
+					<li><a href="#box2">Qu'est ce que le language CSS ?</a></li>
+					<li><a href="#box3">À quoi sert le language CSS ?</a></li>
+					<li><a href="#box4">À quoi ressemble la structure d'un code CSS ?</a></li>
+					<li><a href="#box5">Les bases du CSS</a></li>
+					<li><a href="box6">Comment apprendre le CSS</a></li></ul>
+			</div>
+			
+			<div class="article">
+				<div id="box2" >
+				<h2> Qu'est ce que le language CSS ?</h2>
+				<p>CSS (Cascading Style Sheets) permet de créer des pages web à l'apparence soignée. Cet article vous propose de lever le voile en expliquant ce qu'est CSS ; un exemple simple en présentera la syntaxe, puis quelques termes clés du langage seront introduits.</p>
+				</div>
+				<img id="img1" class="imgarticle" src="./Imagecss/logocss.png" alt=" image_code_CSS">
+			</div>
+			<div class="article">
+
+			<div id="box3" >
+				<h2> À quoi sert le language CSS ?</h2>
+				<p>Le Web serait d'un ennui terrible si tous les sites ressemblaient à la page ci-dessus. Grâce aux CSS, vous pouvez contrôler exactement l'affichage de chaque élément HTML dans le navigateur et ainsi présenter vos documents avec la mise en forme de votre choix.</p>
+				<p>Mais quand l'utiliser ? Dès que vous avez besoin de mettre en forme une page web 😆 <br><br>
+
+					Dans le processus de création, les développeurs définissent souvent le contenu en premier. Si vous affichez une page HTML simple, vous ne retrouvez qu’une succession d’éléments qui se suivent, avec des retours à la ligne pour chacun.
+					<br><br>
+					Ensuite ils le mettent en forme : c’est là que le CSS entre en jeu. Un titre plus ou moins gros, une image centrée dans du texte., un bloc qui s’aligne à droite du précédent.
+					<br><br>
+					Tout cela semble très basique, mais aujourd’hui le CSS permet bien des subtilités, et même d’animer des éléments.
+					<br><br>
+					Dans tous les cas, il organise les différentes parties d’un site.
+					<br><br>
+					Après tout, regardez comment sont généralement organisés les sites web :
+					<br>
+					<ul id="listarticle2">
+						<li>Un header (l’entête du site)</li>
+						<li>Un menu (contenu dans l’entête, sur le côté ou quand on clique sur un bouton (surtout sur mobile)</li>
+						<li>Le contenu principal</li>
+						<li>Un footer (le bas de page)</li>
+					</ul>
+			
+					<br>
+
+					<p>Tout cela est parfaitement organisé grâce au CSS. Comme le sont tous les éléments à l’intérieur : blocs de texte, vidéos, images, boutons…
+					<br><br>
+					Et le site garde une cohérence entre chaque page grâce aussi à l’utilisation de ce CSS.
+					<br><br>
+					Notez que la gestion de ces feuilles de style relève de la compétence du Développeur Front-End.</p>
+			</div>
+			
+			</div>
+			<div class="article">
+			<div id="box4" >
+				<h2> À quoi ressemble la structure d'un code CSS ? </h2>
+				<p>Comment le CSS fonctionne-t-il ?<br>
+					<br><img class="imgarticle" id="logocss" src="./Imagecss/css-declaration-small.png" alt="Exemple ligne de code CSS"> <br><br>
+					À la différence de l’HTML, le CSS ne permet pas de créer une page web.
+					<br><br>
+					C’est aussi un langage côté client. C’est donc votre navigateur qui lit le code CSS et le transpose pour mettre en forme le fichier HTML. Il peut exister des problèmes de compatibilité. Mais, aujourd’hui, à part si votre navigateur web date de l’Âge de pierre, c’est plutôt rare.
+					<br><br>
+					Vous avez plusieurs possibilités pour faire appel au CSS :
+					<br><br>
+						-directement dans une balise de votre code HTML,<br>
+						-dans la balise head de votre page web, entre une balise style, <br>
+						-dans un ou plusieurs fichiers CSS. <br>
+						<br>
+					
+					C’est cette troisième solution qui vaut le nom de CSS. En effet, le fait d’appeler différents fichiers pour la mise en forme correspond à la cascade de feuilles de style.
+					<br><br>
+					Bien évidemment, pour comprendre et exploiter le CSS, il faut maîtriser le HTML. <br><br> L'adrar vous propose d’ailleurs une formation complète à ce sujet pour comprendre  les bases du HTML, CSS, Javascript et PHP  et ainsi devenir autonome 😉
+						<ul id="listarticle2">
+							<li>La description</li>
+							<li>L’auteur et le copyright</li>
+							<li>L’encodage</li>
+							<li>Des indications sur la scabilité</li>
+							<li>Le titre du document</li>
+							<li>L’intégration des informations de chiffrement et de style liés aux documents CSS ou JavaScript et autres ressources intégrées</li>
+							<li>Des indications d’indexation pour les crawlers des moteurs de recherche avec la balise méta robots</li>
+						</ul>
+						<br>
+				</p>
+					
+					<p>Pour mieux se représenter la structure de base d’un document CSS, en voici un exemple :</p>
+					<img id="img2" src="./Imagecss/exemple_css_regle.png" alt="squelette CSS">
+			</div>
+			<img id="imagebox4right" src="./Imagecss/logocss3d.png" alt="image d'illustation CSS">
+			</div>
+			<div class="article">
+			<div id="box5">
+				<h2>Les bases du CSS</h2>
+
+				<p> Pour chaque déclaration, la structure est toujours la même :
+					<br><br>
+
+					sélecteur {
+					propriété: valeur;
+					}
+					<br><br>
+						-Le sélecteur, c'est la balise (X)HTML (body ; h1 ; p, etc.), l'identifiant (id) ou la classe (class) ; <br>
+						-La propriété, c'est l'attribut qu'on veut appliquer (font ; background ; margin ; etc.)  <br>
+						Et enfin la valeur qui précise les caractéristiques de la propriété <br></p>
+					<br><br>
+					<h4>Exemple de feuille de style</h4> <br><br> 
+				
+
+<p> 
+	Fonctionne avec : <br><br>
+
+Tous les navigateurs graphiques <br><br>
+
+Propriétés utilisées : <br><br>
+
+background-color
+color
+font-family ; font-size
+padding
+text-align ; text-decoration
+<br><br>
+Cet exemple de feuille de style (encore une fois, de base) donnera une page : <br><br>
+
+à fond blanc, <br>
+avec une police de caractère par défaut Verdana noire, <br>
+un titre de premier niveau bleu marine centré, <br>
+un titre de deuxième niveau rouge décalé de 15 pixels, <br>
+des liens passant du vert au gris avec un petit effet rouge non souligné au passage de la souris. <br><br>
+
+A noter que les couleur sont ici sous la forme "white, black, blue" etc... pour plus de lisibilité mais qu'il convient plutôt d'utiliser les valeurs hexadécimales qui vont de #000000 (noir) à #ffffff (blanc)
+<br><br>
+Les tailles des polices de caractère sont ici exprimées en %, mais on peut aussi utiliser em qui est aussi une unité de longueur relative à privilégier (pour des raisons d'homogénéité d'affichage et d'accessibilité) aux unités absolues telles que les pt ou les pc. <br>
+À noter que bien que les px soient une unité relative, ils sont aussi à éviter car MSIE les interprète comme unité absolue...
+<br><br>
+Pour que les couleurs des liens changent selon leur état (non visité, visité, survolé, actif, ayant le focus), on utilise des pseudo-classes qui se déclarent par :link, :visited, :hover, :active et :focus. Il est important de respecter cet ordre de déclarations.
+<br><br>
+On commence une feuille de style en général par un "reset" pour mettre toutes les marges à zéro (intérieures padding et extérieures margin). Cela doit permettre d'avoir tous les navigateurs avec, à peu près, le même état de départ...</p>
+					
+
+					<img id="img3" src="./Imagecss/exemplecodecss.png" alt="exemple de code CSS">
+				
+			</div>
+			</div>
+			<div class="article">
+				<div id="box6" >
+					<h2>Comment apprendre le language CSS ?</h2>
+					<br>
+					
+					<p>Avec l'adrar vous pouvez vous formez aux métier du numérique ! Le language CSS mais aussi HTML, JAVASCRIPT et bien d'autres ! Cette formation peut être financée grâce au CPF (Compte Personnel de Formation). Le Compte Personnel de Formation permet d'acquérir des droits à la formation professionnelle, comptabilisés en euros, que chacun peut utiliser avec ou sans l'accord de son employeur tout au long de sa vie active (y compris en période de chômage) pour suivre une formation qualifiante ou certifiante. 
+						<br> <br><img id="imageformateur" src="./Imagehtml/imageformateur.jpg" alt="image formateur">
+						 <p id="pteam">l'équipe de l'adrar </p> <br>
+						 <p>
+						La formation HTML 5 et CSS 3 - Création de pages Web vous apprendra à créer des pages web basées sur HTML5 et CSS3.
+						Cette formation HTML 5 et CSS 3 pourra être ponctuée par la certification ENI-CIT5HTM. La certification ENI-CIT5HTM vous permet de valoriser vos compétences pour construire des pages web statiques avec un langage de balises et à les mettre en forme avec une feuille de style.
+						La certification ENI-CIT5HTM est un label qualité attestant officiellement de votre expertise et répondant aux demandes actuelles du marché.
+						Objectifs de formation
+						<br>
+						<br>
+						A l'issue de cette formation, vous serez capable de :
+						<br>
+							Décrire la structuration d'une page CSS
+							Ajouter des styles CSS aux éléments d'une page
+							Utiliser les blocs et les tableaux
+							Créer des formulaires avec Web Forms 2
+							Tester les nouveautés HTML 5 et CSS 3
+							Exploiter les "media queries" pour s'adapter aux tailles d'écran
+							Expliquer la philosophie des framemorks HTML / CSS pour le développement responsive.
+						<br><br>
+						<h4>Compétences attestées par la certification</h4>
+						<br> </p>
+						<p>
+							Créer une page Web à l'aide des balises du HTML5 afin de rendre sa lecture accessible à tous types d'utilisateurs, y compris ceux en situation de handicap
+							Mettre en forme une page Web et ses éléments HTML5 afin de respecter la maquette graphique définie par l'entreprise en utilisant les règles de mise en forme et de positionnement du CSS3
+							Adapter l'affichage d'une page Web aux différents supports (ordinateur, smartphone, tablette...) en utilisant les règles de "media queries" pour optimiser sa lecture sur différents appareils
+							Concevoir et développer des formulaires (formulaire d'inscription, formulaire de paiement...) utilisables par tout type d'utilisateurs, y compris ceux en situation de handicap pour recueillir des informations (textes, fichiers...) au moyen de balises adéquates du HTML5 et en respectant les recommandations de sécurité fournies par les instances officielles (OWASP, ANSII...)
+							Animer avec du contenu dynamique (vidéo, audio, animation...), une page Web en vue de sa consultation par tout type d'utilisateurs, y compris ceux en situation de handicap, en utilisant les balises avancées du HTML5 et les propriétés du CSS3 pour améliorer l'expérience utilisateur.</p>
+						<br>
+						<br>
+						<h4>Modalités, méthodes et moyens pédagogiques</h4>
+						<br>
+
+						<p>Formation délivrée en présentiel ou distanciel* (e-learning, classe virtuelle, présentiel à distance).
+						<br>
+						Le formateur alterne entre méthode** démonstrative, interrogative et active (via des travaux pratiques et/ou des mises en situation).
+						<br><br>
+						Variables suivant les formations, les moyens pédagogiques mis en oeuvre sont :
+						<br><br>
+							Ordinateurs Mac ou PC (sauf pour les cours de l'offre Management), connexion internet fibre, tableau blanc ou paperboard, vidéoprojecteur ou écran tactile interactif (pour le distanciel)
+							Environnements de formation installés sur les postes de travail ou en ligne
+							Supports de cours et exercices
+						<br><br>
+						En cas de formation intra sur site externe à l'Adrar, le stagiaire s'assure et s'engage également à avoir toutes les ressources matérielles pédagogiques nécessaires (équipements informatiques...) au bon déroulement de l'action de formation visée conformément aux prérequis indiqués dans le programme de formation communiqué.
+						<br><br>
+						* nous consulter pour la faisabilité en distanciel
+						<br>
+						
+						Prérequis <br><br>
+						
+						Aucun.</p>
+				</div>
+			</div>
+		</div>
+
+		
+
+
 		<footer>
 			<div class="flexitems">
 				<h2>A PROPOS</h2>
@@ -43,3 +251,8 @@
 		</footer>
 	</body>
 </html>
+
+
+
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque necessitatibus vero laboriosam omnis perferendis saepe magni quidem repudiandae minima, sapiente fugit blanditiis tempora esse provident culpa cumque modi reprehenderit beatae.

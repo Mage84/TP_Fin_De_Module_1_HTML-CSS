@@ -24,47 +24,50 @@
 
 		<div id="container">
 
-			<h2>Table des matières</h2>
+			
 			<div id="box1">
-				<ul>
-					<li>Quest ce que le HTML ?</li>
-					<li>A quoi sert le HTML ?</li>
-					<li>A quoi ressemble la structure d'un code HTML ?</li>
-					<li>Les bases du HTML</li>
-					<li>Comment apprendre le HTML</li></ul>
+				<h2>Table des matières</h2>
+				<ul id="listarticle1">
+					<li><a href="#box2">Qu'est ce que le HTML ?</a></li>
+					<li><a href="#box3">À quoi sert le HTML ?</a></li>
+					<li><a href="#box4">À quoi ressemble la structure d'un code HTML ?</a></li>
+					<li><a href="#box5">Les bases du HTML</a></li>
+					<li><a href="box6">Comment apprendre le HTML</a></li></ul>
 			</div>
 			
-			
-			<div id="box2" >
-				<h2> Quest ce que le HTML ?</h2>
+			<div class="article">
+				<div id="box2" >
+				<h2> Qu'est ce que le HTML ?</h2>
 				<p>HTML est l'abréviation de Hyper Text Markup Language, c'est le code ou plutôt le langage, utilisé pour la création de sites Internet. Le HTML peut avoir l'air difficile si vous n'avez jamais fait de programmation auparavant, mais vous n'avez besoin que d'un éditeur de texte normal et d'un navigateur Internet. Vous pourriez même reconnaitre du HTML utilisé sur Internet pour modifier du texte sur des forums, pour personnaliser des profils en ligne ou des articles de wikiHow. Le HTML est un outil très utile à toutes les personnes qui utilisent Internet et vous prendrez beaucoup moins de temps que ce que vous pensiez à en apprendre les bases</p>
-				
+				</div>
+				<img id="img1" class="imgarticle" src="./Imagehtml/htmlINTEROGATION.png" alt=" image_code_html">
 			</div>
-			<img id="img1" class="imgarticle" src="./images_html.jpg" alt=" image_code_html">
-			
-			
+			<div class="article">
+
 			<div id="box3" >
-				<h2> A quoi sert le HTML ?</h2>
+				<h2> À quoi sert le HTML ?</h2>
 				<p>Le HTML n’est pas un langage de programmation. En principe, le HTML ne fait pas partie des langages de programmation. Au contraire des langages de programmation et de chiffrement comme PHP ou JavaScript, le HTML ne permet pas l’implémentation d’algorithmes, l’exécution de tâches, d’instructions ou de boucles. Le HTML fait partie des langages de balisage ou de marquage. Alors que le HTML décrit et structure un site Web grâce à une syntaxe textuelle et statique, les langages de programmation sont capables de créer des contenus dynamiques, d’effectuer des calculs complexes, de traiter des données et de prendre des décisions.</p>
 				<p> Le language HTML permet donc d'écrire la structure d'une page web qui sera lu par le le navigateur pour agencer les éléménts tel que définis dans le code HTML via des balise</p>
 			</div>
-			<img class="imgarticle" src="./html.png" alt="Logo HTML">
-			
+			<img class="imgarticle" id="logohtml" src="./Imagehtml/html.png" alt="Logo HTML">
+			</div>
+			<div class="article">
 			<div id="box4" >
 				<h2> A quoi ressemble la structure d'un code HTML ? </h2>
-				<p> La structure HTML de base est toujours très similaire du fait de l’homogénéité de sa syntaxe. Les documents HTML contiennent toujours les trois éléments de base suivants : <br>
+				<p> La structure HTML de base est toujours très similaire du fait de l’homogénéité de sa syntaxe. Les documents HTML contiennent toujours les trois éléments de base suivants :</p> <br>
+					
+					
+					<h4>DOCTYPE</h4>
 					
 					<br>
-					<h4>DOCTYPE</h4>
+					 <p>La déclaration de document se trouve toujours tout en haut au début d’un document HTML. La balise DOCTYPE html est retranscrite sous le format <!DOCTYPE html>. Elle indique au navigateur le type de document, la syntaxe de code ainsi que la version HTML. Le HTML5 sera par exemple caractérisé par la balise html 5. Comme la balise DOCTYPE n’est pas un élément HTML à proprement parler, elle est la seule à figurer avant l’en-tête HTML du document. </p>
+					
+					<h4>En-tête HTML</h4>
+					<br>
+					<p>Dans l’en-tête du document HTML, on retrouve les éléments suivants : 
 					<br>
 					<br>
-					La déclaration de document se trouve toujours tout en haut au début d’un document HTML. La balise DOCTYPE html est retranscrite sous le format <!DOCTYPE html>. Elle indique au navigateur le type de document, la syntaxe de code ainsi que la version HTML. Le HTML5 sera par exemple caractérisé par la balise <html5>. Comme la balise DOCTYPE n’est pas un élément HTML à proprement parler, elle est la seule à figurer avant l’en-tête HTML du document.
-					<br> <br>
-					<h4>En-tête HTML</h4> <br>
-					<br>
-					Dans l’en-tête du document HTML, on retrouve les éléments suivants :
-					<br>
-						<ul>
+						<ul id="listarticle2">
 							<li>La description</li>
 							<li>L’auteur et le copyright</li>
 							<li>L’encodage</li>
@@ -79,14 +82,15 @@
 					
 					<h4>Corps HTML </h4>
 					
-					Le corps HTML est ouvert avec la balise <body>et contient toutes les informations sur la mise en page visible ainsi que sur les éléments de page dynamiques intégrés. Grâce aux balises HTML, le corps décrit tout ce que les internautes voient dans la zone d’affichage du navigateur lorsqu’ils consultent le site Web.
+					<p>Le corps HTML est ouvert avec la balise <body>et contient toutes les informations sur la mise en page visible ainsi que sur les éléments de page dynamiques intégrés. Grâce aux balises HTML, le corps décrit tout ce que les internautes voient dans la zone d’affichage du navigateur lorsqu’ils consultent le site Web.
 					Structure de base d’un document HTML
 					
 					Pour mieux se représenter la structure de base d’un document HTML, en voici un exemple :</p>
-					<img id="img2" src="./images.png" alt="squelette html">
+					<img id="img2" src="./Imagehtml/images.png" alt="squelette html">
 			</div>
-			<img class="imgarticle" src="./code-html-sans-css.png" alt="Image ligne de code HTML">
-			
+			<img id="imagebox4right" src="./Imagehtml/imageslogohtml.png" alt="image d'illustation HTML">
+			</div>
+			<div class="article">
 			<div id="box5">
 				<h2>Les bases du HTML</h2>
 
@@ -106,9 +110,68 @@
 					
 					Les balises h1 à h6 sont utilisées pour structurer des titres. On a 6 types des titres HTML, de h1 à h6. h1 est utilisée pour définir le titre le plus important, et h6 définit le moins important.
 					Exemple :</p>
-					<img id="img3" src="./exempleHTML.png" alt="exemple de balise HTML">
+					<img id="img3" src="./Imagehtml/exempleHTML.png" alt="exemple de balise HTML">
+				
 			</div>
-			
+			</div>
+			<div class="article">
+				<div id="box6" >
+					<h2>Comment apprendre le HTML ?</h2>
+					<br>
+					
+					<p>Avec l'adrar vous pouvez vous formez aux métier du numérique ! Le language HTML mais aussi CSS, JAVASCRIPT et bien d'autres ! Cette formation peut être financée grâce au CPF (Compte Personnel de Formation). Le Compte Personnel de Formation permet d'acquérir des droits à la formation professionnelle, comptabilisés en euros, que chacun peut utiliser avec ou sans l'accord de son employeur tout au long de sa vie active (y compris en période de chômage) pour suivre une formation qualifiante ou certifiante. 
+						<br> <br><img id="imageformateur" src="./Imagehtml/imageformateur.jpg" alt="image formateur">
+						 <p id="pteam">l'équipe de l'adrar </p> <br>
+						 <p>
+						La formation HTML 5 et CSS 3 - Création de pages Web vous apprendra à créer des pages web basées sur HTML5 et CSS3.
+						Cette formation HTML 5 et CSS 3 pourra être ponctuée par la certification ENI-CIT5HTM. La certification ENI-CIT5HTM vous permet de valoriser vos compétences pour construire des pages web statiques avec un langage de balises et à les mettre en forme avec une feuille de style.
+						La certification ENI-CIT5HTM est un label qualité attestant officiellement de votre expertise et répondant aux demandes actuelles du marché.
+						Objectifs de formation
+						<br>
+						<br>
+						A l'issue de cette formation, vous serez capable de :
+						<br>
+							Décrire la structuration d'une page HTML 5
+							Ajouter des styles CSS aux éléments d'une page
+							Utiliser les blocs et les tableaux
+							Créer des formulaires avec Web Forms 2
+							Tester les nouveautés HTML 5 et CSS 3
+							Exploiter les "media queries" pour s'adapter aux tailles d'écran
+							Expliquer la philosophie des framemorks HTML / CSS pour le développement responsive.
+						<br><br>
+						<h4>Compétences attestées par la certification</h4>
+						<br> </p>
+						<p>
+							Créer une page Web à l'aide des balises du HTML5 afin de rendre sa lecture accessible à tous types d'utilisateurs, y compris ceux en situation de handicap
+							Mettre en forme une page Web et ses éléments HTML5 afin de respecter la maquette graphique définie par l'entreprise en utilisant les règles de mise en forme et de positionnement du CSS3
+							Adapter l'affichage d'une page Web aux différents supports (ordinateur, smartphone, tablette...) en utilisant les règles de "media queries" pour optimiser sa lecture sur différents appareils
+							Concevoir et développer des formulaires (formulaire d'inscription, formulaire de paiement...) utilisables par tout type d'utilisateurs, y compris ceux en situation de handicap pour recueillir des informations (textes, fichiers...) au moyen de balises adéquates du HTML5 et en respectant les recommandations de sécurité fournies par les instances officielles (OWASP, ANSII...)
+							Animer avec du contenu dynamique (vidéo, audio, animation...), une page Web en vue de sa consultation par tout type d'utilisateurs, y compris ceux en situation de handicap, en utilisant les balises avancées du HTML5 et les propriétés du CSS3 pour améliorer l'expérience utilisateur.</p>
+						<br>
+						<br>
+						<h4>Modalités, méthodes et moyens pédagogiques</h4>
+						<br>
+
+						<p>Formation délivrée en présentiel ou distanciel* (e-learning, classe virtuelle, présentiel à distance).
+						<br>
+						Le formateur alterne entre méthode** démonstrative, interrogative et active (via des travaux pratiques et/ou des mises en situation).
+						<br><br>
+						Variables suivant les formations, les moyens pédagogiques mis en oeuvre sont :
+						<br><br>
+							Ordinateurs Mac ou PC (sauf pour les cours de l'offre Management), connexion internet fibre, tableau blanc ou paperboard, vidéoprojecteur ou écran tactile interactif (pour le distanciel)
+							Environnements de formation installés sur les postes de travail ou en ligne
+							Supports de cours et exercices
+						<br><br>
+						En cas de formation intra sur site externe à l'Adrar, le stagiaire s'assure et s'engage également à avoir toutes les ressources matérielles pédagogiques nécessaires (équipements informatiques...) au bon déroulement de l'action de formation visée conformément aux prérequis indiqués dans le programme de formation communiqué.
+						<br><br>
+						* nous consulter pour la faisabilité en distanciel
+						<br>
+						
+						Prérequis <br><br>
+						
+						Aucun.</p>
+				</div>
+			</div>
 		</div>
 
 		
