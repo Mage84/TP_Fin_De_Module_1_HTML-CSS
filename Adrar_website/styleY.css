@@ -139,3 +139,16 @@
     text-align: center;
     
 }
+
+
+
+
+/* éléments css pour page_css.html */
+
+#logocss{
+    display: block;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 20px;
+}
